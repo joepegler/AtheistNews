@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> {{post.title}} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <h2> {{post.title}} </h2>
+  <ion-card *ngIf="post.type === 'text'">
+    <div class="post-type-text" [innerHtml]="post.htmlString" padding></div>
+  </ion-card>
+  <img *ngIf="post.type === 'image'" [src]="post.link"/>
+
+</ion-content>

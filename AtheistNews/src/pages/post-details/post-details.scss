@@ -1,0 +1,8 @@
+page-post-details {
+  .post-details-text {
+    //text-align: center;
+    table tr td:nth-child(2) {
+      display: none;
+    }
+  }
+}
